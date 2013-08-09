@@ -1,5 +1,4 @@
-express = require 'express'
-
+express 	= require 'express'
 colors		= require 'colors'
 dust		= require 'dustjs-linkedin'
 
