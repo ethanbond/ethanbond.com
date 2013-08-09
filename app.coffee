@@ -6,7 +6,7 @@ dust		= require 'dustjs-linkedin'
 app = express()
 
 app.get '/', (req, res) ->
-	res.send 'Hello world'
+	res.send 'Hello test!'
 
 
 app.listen 3000
