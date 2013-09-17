@@ -1,0 +1,12 @@
+{>"templates/layout"/}
+
+
+{<content}
+<section>
+	<div>
+		<p>blah blah</p>
+	</div>
+</section>
+
+
+{/content}
