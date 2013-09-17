@@ -4,7 +4,7 @@
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with browser-based text zoom or user-set defaults.
-$base-font-size: 100% !default;
+$base-font-size: 105% !default;
 
 // $base-line-height is 24px while $base-font-size is 16px
 // $base-line-height: 150%;
@@ -51,11 +51,11 @@ $em-base: 16 !default;
 
 $default-float: left;
 
-// $body-bg: #fff;
-// $body-font-color: #222;
-// $body-font-family: "Helvetica", Helvetica, Arial, sans-serif;
-// $body-font-weight: normal;
-// $body-font-style: normal;
+$body-bg: #fff;
+$body-font-color: #222;
+$body-font-family: "kepler-std-display", Georgia, Times, serif;
+$body-font-weight: normal;
+$body-font-style: normal;
 
 // Font-smoothing
 
@@ -160,14 +160,14 @@ $portrait: "only screen and (orientation: portrait)";
 
 // Control header font styles
 
-// $header-font-family: "Helvetica", Helvetica, Arial, sans-serif;
-// $header-font-weight: normal;
-// $header-font-style: normal;
-// $header-font-color: #222;
-// $header-line-height: 1.4;
-// $header-top-margin: .2em;
-// $header-bottom-margin: .5em;
-// $header-text-rendering: optimizeLegibility;
+$header-font-family: "freight-sans-pro", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-weight: normal;
+$header-font-style: normal;
+$header-font-color: #222;
+$header-line-height: 1.4;
+$header-top-margin: .2em;
+$header-bottom-margin: .5em;
+$header-text-rendering: optimizeLegibility;
 
 // Control header font sizes
 
