@@ -4,14 +4,14 @@
   box-sizing: border-box; }
 
 html, body {
-  font-size: 100%; }
+  font-size: 105%; }
 
 body {
   background: white;
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "ff-speak-web", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "kepler-std-display", Georgia, Times, serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -839,8 +839,8 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "ff-speak-web", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-family: "freight-sans-pro", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
   font-style: normal;
   color: #222222;
   text-rendering: optimizeLegibility;
@@ -4340,10 +4340,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  padding-top: 2rem; }
-
-section {
+section > div, header > div {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -4351,17 +4348,99 @@ section {
   margin-bottom: 0;
   max-width: 62.5em;
   *zoom: 1; }
-  section:before, section:after {
+  section > div:before, section > div:after, header > div:before, header > div:after {
     content: " ";
     display: table; }
-  section:after {
+  section > div:after, header > div:after {
     clear: both; }
-  section div {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
+
+ul {
+  list-style-type: none; }
+
+header {
+  background-color: #ec3442;
+  padding-bottom: 4rem; }
+  header nav {
     width: 100%;
-    float: left; }
-  section h1 {
-    font-weight: normal;
-    margin-top: 0; }
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 62.5em;
+    *zoom: 1;
+    padding: 1rem 0; }
+    header nav:before, header nav:after {
+      content: " ";
+      display: table; }
+    header nav:after {
+      clear: both; }
+    header nav ul {
+      position: relative;
+      padding-left: 0.9375em;
+      padding-right: 0.9375em;
+      width: 100%;
+      float: left; }
+    header nav li {
+      padding: 0 0.5rem; }
+    header nav li:first-child {
+      padding: 0;
+      padding-right: 1rem; }
+
+nav a {
+  color: white;
+  opacity: 0.7;
+  transition: opacity 100ms; }
+  nav a:hover {
+    color: white;
+    opacity: 1; }
+  nav a.active {
+    color: white;
+    opacity: 1; }
+
+ul.horizontal {
+  margin-bottom: 0; }
+  ul.horizontal li {
+    display: inline-block; }
+
+#tagline {
+  position: relative;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  width: 100%;
+  float: left; }
+
+.sections {
+  margin-top: 2rem; }
+  .sections * {
+    color: white;
+    font-family: "kepler-std-display", Georgia, Times, serif; }
+  .sections .supertitle {
+    font-family: "freight-sans-pro", "Helvetica", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #1b2425;
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+    font-size: 0.8rem; }
+  .sections .title {
+    font-family: "kepler-std-display", Georgia, Times, serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 3rem;
+    margin-top: 0;
+    color: white; }
+  .sections .sectionItem {
+    margin-bottom: -0.2rem;
+    font-size: 1.2rem; }
+  .sections .sectionDesc {
+    font-family: "freight-sans-pro", "Helvetica", Helvetica, Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem; }
+  .sections li {
+    margin-bottom: -0.5rem; }
+
+#sectionsProjects, #sectionsResources, #sectionsThoughts {
+  position: relative;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  width: 33.33333%;
+  float: left; }

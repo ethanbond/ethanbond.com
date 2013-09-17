@@ -3,18 +3,97 @@
 @import "mixins";
 @import "variables";
 
-
-body {
-	padding-top: 2rem;
-}
-section {
-	@include grid-row;
-	div {
-		@include grid-column(12);
+section, header {
+	& > div {
+		@include grid-row();
 	}
-	h1 {
-		font-weight: normal;
+}
+
+ul {
+	list-style-type: none;
+}
+
+header {
+	background-color: #EC3442;
+	padding-bottom: 4rem;
+	nav {
+		@include grid-row();
+		padding: 1rem 0;
+		ul {
+			@include grid-column(12);
+		}
+		li {
+			padding: 0 0.5rem;
+		}
+		li:first-child {
+			padding: 0;
+			padding-right: 1rem;
+		}
+	}
+}
+
+nav a {
+	color: white;
+	opacity: 0.7;
+	transition: opacity 100ms;
+	&:hover {
+		color: white;
+		opacity: 1;
+	}
+	&.active {
+		color: white;
+		opacity: 1;
+	}
+}
+
+ul.horizontal {
+	margin-bottom: 0;
+	li {
+		display: inline-block;
+	}
+}
+
+#tagline {
+	@include grid-column(12);
+
+}
+
+.sections {
+	margin-top: 2rem;
+	* {
+		color: white;
+		font-family: $body-font-family;
+	}
+	.supertitle {
+		font-family: $header-font-family;
+		text-transform: uppercase;
+		color: #1B2425;
+		font-weight: bold;
+		letter-spacing: 0.25rem;
+		font-size: 0.8rem;
+	}
+	.title {
+		font-family: $body-font-family;
+		font-weight: 300;
+		font-style: italic;
+		font-size: 3rem;
 		margin-top: 0;
+		color: white;
+	}
+	.sectionItem {
+		margin-bottom: -0.2rem;
+		font-size: 1.2rem;
+	}
+	.sectionDesc {
+		font-family: $header-font-family;
+		color: rgba(255, 255, 255, 0.6);
+		font-size: 0.8rem;
+	}
+	li {
+		margin-bottom: -0.5rem;
 	}
 }
 
+#sectionsProjects, #sectionsResources, #sectionsThoughts {
+	@include grid-column(4);
+}
