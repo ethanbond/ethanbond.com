@@ -4340,6 +4340,27 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.sans {
+  font-family: "freight-sans-pro", "Helvetica", Helvetica, Arial, sans-serif; }
+
+.serif {
+  font-family: "kepler-std-display", Georgia, Times, serif; }
+
+.italic {
+  font-style: italic; }
+
+.light {
+  font-weight: 300; }
+
+.bold {
+  font-weight: 500; }
+
+.white {
+  color: white; }
+
+.black {
+  color: #1b2425; }
+
 section > div, header > div {
   width: 100%;
   margin-left: auto;
@@ -4358,7 +4379,7 @@ ul {
   list-style-type: none; }
 
 header {
-  background-color: #ec3442;
+  background-color: #292b2e;
   padding-bottom: 4rem; }
   header nav {
     width: 100%;
@@ -4368,6 +4389,7 @@ header {
     margin-bottom: 0;
     max-width: 62.5em;
     *zoom: 1;
+    background-color: #da3a2f;
     padding: 1rem 0; }
     header nav:before, header nav:after {
       content: " ";
@@ -4417,7 +4439,7 @@ ul.horizontal {
   .sections .supertitle {
     font-family: "freight-sans-pro", "Helvetica", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    color: #1b2425;
+    color: #dd3232;
     font-weight: bold;
     letter-spacing: 0.25rem;
     font-size: 0.8rem; }

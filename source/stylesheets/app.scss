@@ -14,10 +14,11 @@ ul {
 }
 
 header {
-	background-color: #EC3442;
+	background-color: #292B2E;
 	padding-bottom: 4rem;
 	nav {
 		@include grid-row();
+		background-color: #DA3A2F;
 		padding: 1rem 0;
 		ul {
 			@include grid-column(12);
@@ -67,7 +68,7 @@ ul.horizontal {
 	.supertitle {
 		font-family: $header-font-family;
 		text-transform: uppercase;
-		color: #1B2425;
+		color: #DD3232;
 		font-weight: bold;
 		letter-spacing: 0.25rem;
 		font-size: 0.8rem;
