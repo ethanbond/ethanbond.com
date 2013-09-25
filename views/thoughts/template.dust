@@ -1,0 +1,65 @@
+{>"templates/layout"/}
+
+
+{<content}
+<section class="content">
+	<div id="articleTitling">
+		<div class="articleHeader">
+			<h1 id="articleTitle">{article.title}</h1>			
+			<div id="articleBanner">
+				<img src="{article.image}" alt="">
+			</div>
+		</div>
+		<div class="articleContent">
+			<p id="articleIntro">
+				{article.introduction}
+			</p>
+			{#article.paragraphs}
+			<p>
+				{content}
+			</p>
+			{/article.paragraphs}
+		</div>
+		
+	</div>
+</section>
+
+
+{/content}
+
+{<scripts}
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>			
+		<script>
+			(function(){
+				var expandednav = $(".sections");
+			    var parallaxBool = false;
+			    var height = expandednav.height();
+
+			    checkParallax();
+
+				$(window).bind('scroll',function(e){
+				    flexHeader();
+				});
+				 
+				function flexHeader(){
+					if (parallaxBool === true){
+					    var scrolled = $(window).scrollTop();
+				    	expandednav.css('height',((height+45) - (scrolled*5))+'px');
+					}
+				}
+
+				function checkParallax(){
+					if (parseInt($("body").css("width")) < 768 ){
+						parallaxBool = false;
+					} else {
+						parallaxBool = true;
+					}
+				}
+
+				$(window).resize(function(){	
+					checkParallax();
+				});
+
+			})(jQuery)
+		</script>
+{/scripts}

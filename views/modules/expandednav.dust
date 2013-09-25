@@ -1,0 +1,131 @@
+			<div class="sections">
+				<div id="tagline">
+					<h6 class="supertitle">
+						Product Design & Computer Science
+					</h6>
+					<h1 class="title">
+						I design & develop interactions between people & systems to make the world better.
+					</h1>
+				</div>
+				<div id="sectionsProjects">
+					<h6 class="supertitle">
+						Projects
+					</h6>
+					<ul>
+						<li>
+							<a href="/project/identitie">
+								<h5 class="sectionItem">
+									Identitie
+								</h5>
+								<p class="sectionDesc">
+									Everyday 2-factor biometric authentication.
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="/project/college-factual">
+								<h5 class="sectionItem">
+									College Factual
+								</h5>
+								<p class="sectionDesc">
+									Data-driven college search and selection.
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="/project/babynotes">
+								<h5 class="sectionItem">
+									Babynotes
+								</h5>
+								<p class="sectionDesc">
+									Bringing data to preventative, personal healthcare.
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="/project/canon">
+								<h5 class="sectionItem">
+									Canon
+								</h5>
+								<p class="sectionDesc">
+									Music server and crowdsourced jukebox for social gatherings.
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="/project/bubblio">
+								<h5 class="sectionItem">
+									bubbl.io
+								</h5>
+								<p class="sectionDesc">
+									Quick file sharing and collaboration with no notion of ownership.
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="/projects">
+								<h5 class="sectionItem italic">
+									Miscellaneous
+								</h5>
+								<p class="sectionDesc">
+									Other branding, web, and user interface projects.
+								</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div id="sectionsResources">
+					<h6 class="supertitle">
+						Resources
+					</h6>
+					<ul>
+						<li>
+							<a href="/resource/coffeegrounds">
+								<h5 class="sectionItem">
+									coffeegrounds
+								</h5>
+								<p class="sectionDesc">
+									Quick starting point for node.js projects with Coffeescript, SASS, dust.js, and Foundation.
+								</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div id="sectionsThoughts">
+					<h6 class="supertitle">
+						Thoughts
+					</h6>
+					<ul>
+						<li>
+							<a href="/thought/importance-of-conclusion">
+								<h5 class="sectionItem">
+									Importance of Conclusion
+								</h5>
+								<p class="sectionDesc">
+									Interactions are becoming increasingly passive and always-on. We have a responsibility to let people know when their work is done.
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="/thought/users-as-vectors">
+								<h5 class="sectionItem">
+									Users As Vectors
+								</h5>
+								<p class="sectionDesc">
+									At College Factual we face a lot of problems with identifying what a user needs or wants. Here's my proposal to capture both direction and magnitude of their sentiment. 
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="/thought/passion-and-formality">
+								<h5 class="sectionItem">
+									Passion & Formality
+								</h5>
+								<p class="sectionDesc">
+									We're inundated with examples of passionate but nontechnical leaders, then quickly rebuffed by the smartasses who point to the formally trained executors often behind these "idea guys." Why must these two paths fork? Do they really, at all? Have they ever?
+								</p>
+							</a>							
+						</li>
+					</ul>
+				</div>
+			</div>

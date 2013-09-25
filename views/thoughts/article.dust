@@ -1,0 +1,38 @@
+{>"templates/layout"/}
+
+{<stylesheets}
+{/stylesheets}
+
+{<content}
+<section class="content">
+	{#article}
+		<article>
+			<div id="articleBanner">
+				<img src="{banner}" alt="">
+			</div>
+			<div id="articleTitling">
+				<div class="articleHeader">
+					<h1 id="articleTitle">
+						{title}
+					</h1>
+					<p id="articleIntro">
+						{introduction}
+					</p>
+				</div>
+				
+			</div>
+			<div id="articleContent">
+				{#paragraphs}
+				<p>
+					{.}
+				</p>
+				{/paragraphs}
+			</div>
+		</article>
+	{/article}
+</section>
+{/content}
+
+{<scripts}
+		
+{/scripts}

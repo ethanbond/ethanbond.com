@@ -1,0 +1,10 @@
+<section id="footer">
+	<footer>
+		<h6 class="sans" id="madeInNY">
+			MADE IN NEW YORK
+		</h6>
+		<h6 class="sans" id="copyrightDate">
+			Ethan Bond | 2013 | me@ethanbond.com
+		</h6>
+	</footer>
+</section>
