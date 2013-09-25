@@ -15,10 +15,9 @@ ul {
 
 header {
 	background-color: #292B2E;
-	padding-bottom: 4rem;
 	nav {
 		@include grid-row();
-		background-color: #DA3A2F;
+		background-color: $red;
 		padding: 1rem 0;
 		ul {
 			@include grid-column(12);
@@ -54,6 +53,20 @@ ul.horizontal {
 	}
 }
 
+.button {
+	background-color: $red;
+	font-family: $header-font-family;
+	border-width: 0;
+	font-size: 0.7rem;
+	font-weight: lighter;
+	box-shadow: none;
+	&:hover {
+		background-color: lighten($red, 10%);
+	}
+}
+
+
+
 #tagline {
 	@include grid-column(12);
 
@@ -61,6 +74,8 @@ ul.horizontal {
 
 .sections {
 	margin-top: 2rem;
+	padding-bottom: 3rem;
+	overflow: hidden;
 	* {
 		color: white;
 		font-family: $body-font-family;
@@ -68,7 +83,7 @@ ul.horizontal {
 	.supertitle {
 		font-family: $header-font-family;
 		text-transform: uppercase;
-		color: #DD3232;
+		color: $red;
 		font-weight: bold;
 		letter-spacing: 0.25rem;
 		font-size: 0.8rem;
@@ -82,7 +97,7 @@ ul.horizontal {
 		color: white;
 	}
 	.sectionItem {
-		margin-bottom: -0.2rem;
+		margin-bottom: 0rem;
 		font-size: 1.2rem;
 	}
 	.sectionDesc {
@@ -97,4 +112,121 @@ ul.horizontal {
 
 #sectionsProjects, #sectionsResources, #sectionsThoughts {
 	@include grid-column(4);
+	@media #{$small} {
+		@include grid-column(12);
+	}
+
+}
+
+.content {
+	padding-top: 5rem;
+	padding-bottom: 3rem;
+	& > div {
+		@include grid-row();
+	}
+}
+
+
+
+#featuredProject{
+	#projectTitling {
+		@include grid-column(4);
+		z-index: 200;
+		@media #{$small} {
+			@include grid-column(12);
+		}
+	}
+	#projectBanner {
+		@include grid-column(8);
+
+	}
+	.projectSupertitle {
+		color: $red;
+		font-size: 0.5rem;
+		letter-spacing: 3px;
+		font-weight: bold;
+	}
+
+	.projectTitle {
+		margin-top: -3rem;
+		margin-bottom: -3rem;
+		font-family: $body-font-family;
+		font-style: italic;
+		font-size: 14rem;
+		@media #{$small} {
+			margin-top: -0.5rem;
+			margin-bottom: 0;
+			font-size: 3rem;
+		}
+	}
+
+	.projectTags {
+		text-transform: uppercase;
+		font-size: 0.25rem;
+		letter-spacing: 1px;
+		color: #868686;
+	}
+}
+
+#footer {
+	@include grid-row;
+}
+
+footer {
+	@include grid-column(12);
+	color: #cacaca;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+#madeInNY {
+	font-weight: bold;
+	font-size: 0.5rem;
+	letter-spacing: 2px;
+}
+
+#copyrightDate {
+	font-size: 0.3rem;
+	letter-spacing: 1px;
+}
+
+
+article {
+	@include grid-row;
+	position: relative;
+}
+
+#articleTitling {
+	@include grid-column(8, true, false, 1);
+	height: 18rem;
+}
+
+#articleBanner {
+	position: absolute;
+	left:0; top: -3rem;
+	height: 18rem;
+	overflow: hidden;
+	img {
+		width: 100%;
+		vertical-align: top;
+	}
+}
+
+#articleTitle {
+	font-family: $body-font-family;
+	font-style: italic;
+	font-size: 4rem;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+#articleIntro {
+	font-family: $header-font-family;
+	font-size: 1.2rem;
+	color: white;
+}
+
+
+#articleContent {
+	@include grid-column(8, true, false, 2);
 }

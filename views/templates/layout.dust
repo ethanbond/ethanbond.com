@@ -5,7 +5,6 @@
 		<meta name="description" content="{metadata.description}" />
 		<meta name="author" content="{metadata.author}" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<script src="/javascripts/dust.js"></script>
 		<link rel="stylesheet" href="/stylesheets/app.css">
 		<script type="text/javascript" src="//use.typekit.net/dft8jnl.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -23,111 +22,50 @@
 					</ul>					
 				</div>
 			</nav>
-			<div class="sections">
-				<div id="tagline">
-					<h6 class="supertitle">
-						Product Design & Computer Science
-					</h6>
-					<h1 class="title">
-						I design & develop interactions between people to make the world a more understandable place.
-					</h1>
-				</div>
-				<div id="sectionsProjects">
-					<h6 class="supertitle">
-						Projects
-					</h6>
-					<ul>
-						<li>
-							<h5 class="sectionItem">
-								College Factual
-							</h5>
-							<p class="sectionDesc">
-								Data-driven college search and selection.
-							</p>
-						</li>
-						<li>
-							<h5 class="sectionItem">
-								Babynotes
-							</h5>
-							<p class="sectionDesc">
-								Bringing data to preventative, personal healthcare.
-							</p>
-						</li>
-						<li>
-							<h5 class="sectionItem">
-								Canon
-							</h5>
-							<p class="sectionDesc">
-								Music server and crowdsourced jukebox for social gatherings.
-							</p>
-						</li>
-						<li>
-							<h5 class="sectionItem">
-								bubbl.io
-							</h5>
-							<p class="sectionDesc">
-								Quick file sharing and collaboration with no notion of ownership.
-							</p>
-						</li>
-						<li>
-							<h5 class="sectionItem italic">
-								Miscellaneous
-							</h5>
-							<p class="sectionDesc">
-								Other branding, web, and user interface projects.
-							</p>
-						</li>
-					</ul>
-				</div>
-				<div id="sectionsResources">
-					<h6 class="supertitle">
-						Resources
-					</h6>
-					<ul>
-						<li>
-							<h5 class="sectionItem">
-								coffeegrounds
-							</h5>
-							<p class="sectionDesc">
-								Quick starting point for node.js projects with Coffeescript, SASS, dust.js, and Foundation.
-							</p>
-						</li>
-					</ul>
-				</div>
-				<div id="sectionsThoughts">
-					<h6 class="supertitle">
-						Thoughts
-					</h6>
-					<ul>
-						<li>
-							<h5 class="sectionItem">
-								Importance of Conclusion
-							</h5>
-							<p class="sectionDesc">
-								Interactions are becoming increasingly passive and always-on. We have a responsibility to let people know when their work is done.
-							</p>
-						</li>
-						<li>
-							<h5 class="sectionItem">
-								Users As Vectors
-							</h5>
-							<p class="sectionDesc">
-								At College Factual we face a lot of problems with identifying what a user needs or wants. Here's my proposal to capture both direction and magnitude of their sentiment. 
-							</p>
-						</li>
-						<li>
-							<h5 class="sectionItem">
-								Passion & Formality
-							</h5>
-							<p class="sectionDesc">
-								We're inundated with examples of passionate but nontechnical leaders, then quickly rebuffed by the smartasses who point to the formally trained executors often behind these "idea guys." Why must these two paths fork? Do they really, at all? Have they ever?
-							</p>
-						</li>
-					</ul>
-				</div>
-			</div>
+
+			{>"modules/expandednav"/}
+			
+
 		</header>
 		{+content/}
+
+		{>"modules/footer"/}
+
+
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>			
+		<script>
+			(function(){
+				var expandednav = $(".sections");
+			    var parallaxBool = false;
+			    var height = expandednav.height();
+
+			    checkParallax();
+
+				$(window).bind('scroll',function(e){
+				    flexHeader();
+				});
+				 
+				function flexHeader(){
+					if (parallaxBool === true){
+					    var scrolled = $(window).scrollTop();
+				    	expandednav.css('height',((height+45) - (scrolled*5))+'px');
+					}
+				}
+
+				function checkParallax(){
+					if (parseInt($("body").css("width")) < 768 ){
+						parallaxBool = false;
+					} else {
+						parallaxBool = true;
+					}
+				}
+
+				$(window).resize(function(){	
+					checkParallax();
+				});
+
+			})(jQuery)
+		</script>		{+scripts/}
 	</body>
-	{+scripts/}
 </html>

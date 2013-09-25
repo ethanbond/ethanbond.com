@@ -208,7 +208,7 @@ select {
     float: none !important; } }
 
 /* Styles for screens that are atleast 768px; */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .large-1 {
     position: relative;
     width: 8.33333%; }
@@ -411,7 +411,7 @@ td.show-for-small, td.show-for-medium-down, td.show-for-large-down, td.hide-for-
   display: table-cell !important; }
 
 /* Medium Displays: 768px - 1279px */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   /* Specific visilbity for tables */
   .show-for-medium, .show-for-medium-up {
     display: inherit !important; }
@@ -686,7 +686,7 @@ th.hide-for-touch {
       clear: both; } }
 
 /* Foundation Block Grids for above small breakpoint */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   /* Remove small grid clearing */
   .small-block-grid-1 > li:nth-of-type(1n+1) {
     clear: none; }
@@ -987,7 +987,7 @@ blockquote, blockquote p {
   border: none;
   padding: 0 0.0625em; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.4; }
   h1 {
@@ -1217,7 +1217,7 @@ button, .button {
       -webkit-border-radius: 1000px;
       border-radius: 1000px; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   button, .button {
     display: inline-block; } }
 
@@ -1862,7 +1862,7 @@ label.error {
   .section-container.tabs > section.active > .title, .section-container.tabs > .section.active > .title {
     border-bottom: 0; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   [data-section=''], [data-section='auto'], .section-container.auto {
     width: 100%;
     position: relative;
@@ -2717,7 +2717,7 @@ label.error {
 .touch .orbit-bullets {
   display: none; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .touch .orbit-container .orbit-prev, .touch .orbit-container .orbit-next {
     display: inherit; }
   .touch .orbit-bullets {
@@ -2774,7 +2774,7 @@ label.error {
     font-weight: bold;
     cursor: pointer; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .reveal-modal {
     padding: 1.875em;
     top: 6.25em; }
@@ -2921,7 +2921,7 @@ label.error {
   left: 0px; }
 
 /* Styles for screens that are atleast 768px; */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .joyride-tip-guide {
     width: 300px;
     left: inherit; }
@@ -3025,7 +3025,7 @@ label.error {
   .clearing-feature li.clearing-featured-img {
     display: block; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .clearing-main-prev, .clearing-main-next {
     position: absolute;
     height: 100%;
@@ -3916,7 +3916,7 @@ a.th {
   color: #888888;
   font-weight: normal; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .tooltip > .nub {
     border-color: transparent transparent black transparent;
     top: -10px; }
@@ -4379,8 +4379,7 @@ ul {
   list-style-type: none; }
 
 header {
-  background-color: #292b2e;
-  padding-bottom: 4rem; }
+  background-color: #292b2e; }
   header nav {
     width: 100%;
     margin-left: auto;
@@ -4424,6 +4423,16 @@ ul.horizontal {
   ul.horizontal li {
     display: inline-block; }
 
+.button {
+  background-color: #da3a2f;
+  font-family: "freight-sans-pro", "Helvetica", Helvetica, Arial, sans-serif;
+  border-width: 0;
+  font-size: 0.7rem;
+  font-weight: lighter;
+  box-shadow: none; }
+  .button:hover {
+    background-color: #e2615a; }
+
 #tagline {
   position: relative;
   padding-left: 0.9375em;
@@ -4432,14 +4441,16 @@ ul.horizontal {
   float: left; }
 
 .sections {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+  overflow: hidden; }
   .sections * {
     color: white;
     font-family: "kepler-std-display", Georgia, Times, serif; }
   .sections .supertitle {
     font-family: "freight-sans-pro", "Helvetica", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    color: #dd3232;
+    color: #da3a2f;
     font-weight: bold;
     letter-spacing: 0.25rem;
     font-size: 0.8rem; }
@@ -4451,7 +4462,7 @@ ul.horizontal {
     margin-top: 0;
     color: white; }
   .sections .sectionItem {
-    margin-bottom: -0.2rem;
+    margin-bottom: 0rem;
     font-size: 1.2rem; }
   .sections .sectionDesc {
     font-family: "freight-sans-pro", "Helvetica", Helvetica, Arial, sans-serif;
@@ -4465,4 +4476,159 @@ ul.horizontal {
   padding-left: 0.9375em;
   padding-right: 0.9375em;
   width: 33.33333%;
+  float: left; }
+  @media only screen and (max-width: 768px) {
+    #sectionsProjects, #sectionsResources, #sectionsThoughts {
+      position: relative;
+      padding-left: 0.9375em;
+      padding-right: 0.9375em;
+      width: 100%;
+      float: left; } }
+
+.content {
+  padding-top: 5rem;
+  padding-bottom: 3rem; }
+  .content > div {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 62.5em;
+    *zoom: 1; }
+    .content > div:before, .content > div:after {
+      content: " ";
+      display: table; }
+    .content > div:after {
+      clear: both; }
+
+#featuredProject #projectTitling {
+  position: relative;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  width: 33.33333%;
+  float: left;
+  z-index: 200; }
+  @media only screen and (max-width: 768px) {
+    #featuredProject #projectTitling {
+      position: relative;
+      padding-left: 0.9375em;
+      padding-right: 0.9375em;
+      width: 100%;
+      float: left; } }
+#featuredProject #projectBanner {
+  position: relative;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  width: 66.66667%;
+  float: left; }
+#featuredProject .projectSupertitle {
+  color: #da3a2f;
+  font-size: 0.5rem;
+  letter-spacing: 3px;
+  font-weight: bold; }
+#featuredProject .projectTitle {
+  margin-top: -3rem;
+  margin-bottom: -3rem;
+  font-family: "kepler-std-display", Georgia, Times, serif;
+  font-style: italic;
+  font-size: 14rem; }
+  @media only screen and (max-width: 768px) {
+    #featuredProject .projectTitle {
+      margin-top: -0.5rem;
+      margin-bottom: 0;
+      font-size: 3rem; } }
+#featuredProject .projectTags {
+  text-transform: uppercase;
+  font-size: 0.25rem;
+  letter-spacing: 1px;
+  color: #868686; }
+
+#footer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5em;
+  *zoom: 1; }
+  #footer:before, #footer:after {
+    content: " ";
+    display: table; }
+  #footer:after {
+    clear: both; }
+
+footer {
+  position: relative;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  width: 100%;
+  float: left;
+  color: #cacaca;
+  text-align: center;
+  padding: 1rem 0; }
+
+#madeInNY {
+  font-weight: bold;
+  font-size: 0.5rem;
+  letter-spacing: 2px; }
+
+#copyrightDate {
+  font-size: 0.3rem;
+  letter-spacing: 1px; }
+
+article {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5em;
+  *zoom: 1;
+  position: relative; }
+  article:before, article:after {
+    content: " ";
+    display: table; }
+  article:after {
+    clear: both; }
+
+#articleTitling {
+  position: relative;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  width: 66.66667%;
+  float: right;
+  margin-left: 8.33333%;
+  float: left;
+  height: 18rem; }
+
+#articleBanner {
+  position: absolute;
+  left: 0;
+  top: -3rem;
+  height: 18rem;
+  overflow: hidden; }
+  #articleBanner img {
+    width: 100%;
+    vertical-align: top; }
+
+#articleTitle {
+  font-family: "kepler-std-display", Georgia, Times, serif;
+  font-style: italic;
+  font-size: 4rem;
+  margin-bottom: 0;
+  margin-top: 0; }
+
+#articleIntro {
+  font-family: "freight-sans-pro", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  color: white; }
+
+#articleContent {
+  position: relative;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  width: 66.66667%;
+  float: right;
+  margin-left: 16.66667%;
   float: left; }

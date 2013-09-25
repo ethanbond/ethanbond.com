@@ -26,7 +26,17 @@ app.use express.bodyParser()
 app.use express.static(__dirname + '/public')
 app.use app.router
 
+
+
+app.get '/thought/:thoughtID', routes.thought
+app.get '/thoughts', routes.thoughts
+app.get '/resource/:resourceID', routes.resource
+app.get '/resources', routes.thoughts
+app.get '/project/:projectID', routes.project
+app.get '/projects', routes.thoughts
+
 app.get '/', routes.index
+
 
 app.listen 3000
 console.log 'SUCCESS: Express listening on 3000'.green

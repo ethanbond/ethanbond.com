@@ -2,11 +2,42 @@
 
 
 {<content}
-<section>
-	<div>
-		<p>blah blah</p>
+<section class="content">
+	<div id="featuredProject">
+		<div id="projectTitling">
+			<h6 class="projectSupertitle">FEATURED PROJECT</h6>
+			<h1 class="projectTitle">Identitie</h1>
+			<h4 class="projectTags">BRANDING, USER INTERFACE, WORK IN PROGRESS</h4>			
+			<p class="projectDescription">
+				A project to leverage the iPhone 5s's new fingerprint scanner. Identitie addresses some core issues around 2-factor authentication: namely difficulty of setup and speed of authentication. I like to think of it as 2-factor auth for everyday signins.
+			</p>
+			<a href="/project/identitie" class="button">
+				View This Project
+			</a>
+		</div>
+		<div id="projectBanner">
+			<img src="img/projects/identitie/midauthMockup.png" alt="">
+		</div>
+		
 	</div>
+
+	<div id="skillGrid">
+		<div class="skillItem">
+			
+		</div>
+		<div class="skillItem">
+			
+		</div>
+		<div class="skillItem">
+			
+		</div>
+	</div>
+
+
 </section>
 
 
 {/content}
+
+{<scripts}
+{/scripts}
