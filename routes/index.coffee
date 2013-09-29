@@ -48,7 +48,8 @@ module.exports =
 		res.render "../views/resources/" + resourceID
 	dbtest: (req, res) ->
 		db = require '../db'
-		db.collection('test').find().toArray (err, result) ->
+		db.projects.find().toArray (err, result) ->
 			if err then throw err
 			console.log result
+			res.send result
 
