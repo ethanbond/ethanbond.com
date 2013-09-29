@@ -3,7 +3,7 @@
 
 {<content}
 <section class="content">
-	<div id="featuredProject">
+<!-- 	<div id="featuredProject">
 		<div id="projectTitling">
 			<h6 class="projectSupertitle">FEATURED PROJECT</h6>
 			<h1 class="projectTitle">Identitie</h1>
@@ -20,10 +20,14 @@
 		</div>
 		
 	</div>
+ -->
 
 	<div id="skillGrid">
 		<div class="skillItem">
-			
+			<h1>Identifying Needs</h1>			
+			<p>
+				It takes a special skillset to be able to identify user needs. That skillset includes user testing, knowledge of psychology, and analytical experience. These aren't taught in school and they aren't introduced by intuition. Only formal training and real experience can reveal when, where, and why these work.
+			</p>
 		</div>
 		<div class="skillItem">
 			

@@ -3,11 +3,15 @@ colors		= require 'colors'
 dust		= require 'dustjs-linkedin'
 cons 		= require 'consolidate'
 sass		= require 'node-sass'
+mongodb		= require 'mongodb'
+mongoskin 	= require 'mongoskin'
 
 app 		= express()
 
 routes 		= require './routes'
 models		= require './models'
+db 			= require './db'
+
 
 app.set 'view engine', 'dust'
 app.set 'template engine', 'dust'
@@ -34,6 +38,9 @@ app.get '/resource/:resourceID', routes.resource
 app.get '/resources', routes.thoughts
 app.get '/project/:projectID', routes.project
 app.get '/projects', routes.thoughts
+
+app.get '/dbtest', routes.dbtest
+
 
 app.get '/', routes.index
 

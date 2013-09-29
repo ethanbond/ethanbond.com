@@ -46,11 +46,9 @@ module.exports =
 	resource: (req, res) ->
 		resourceID = req.params.resourceID
 		res.render "../views/resources/" + resourceID
+	dbtest: (req, res) ->
+		db = require '../db'
+		db.collection('test').find().toArray (err, result) ->
+			if err then throw err
+			console.log result
 
-
-
-	jumpToTopic: (req, res) ->
-		area = req.params.area
-		id = req.params.id
-		topic = req.params.topic
-		res.send "Area: " + area + "    Id: " + id + "    Topic: " + topic
