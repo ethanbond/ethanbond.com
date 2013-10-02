@@ -44,7 +44,16 @@
 
 				$(window).bind('scroll',function(e){
 				    flexHeader();
+				    projectNav();
 				});
+
+				function projectNav(){
+					if ($(window).scrollTop() > 100){
+						$(".projectNav").css("margin-top", ($(window).scrollTop() - 100) + "px");
+					} else {
+						$(".projectNav").css("margin-top", 0);
+					}
+				}
 				 
 				function flexHeader(){
 					if (parallaxBool === true){

@@ -3,36 +3,50 @@
 
 {<content}
 <section class="content">
-	<div id="featuredProject">
-		<div id="projectTitling">
-			<h6 class="projectSupertitle">FEATURED PROJECT</h6>
-			<h1 class="projectTitle">Identitie</h1>
-			<h4 class="projectTags">BRANDING, USER INTERFACE, WORK IN PROGRESS</h4>			
-			<p class="projectDescription">
-				A project to leverage the iPhone 5s's new fingerprint scanner. Identitie addresses some core issues around 2-factor authentication: namely difficulty of setup and speed of authentication. I like to think of it as 2-factor auth for everyday signins.
-			</p>
-			<a href="/project/identitie" class="button">
-				View This Project
-			</a>
-		</div>
-		<div id="projectBanner">
-			<img src="img/projects/identitie/midauthMockup.png" alt="">
-		</div>
+	<div class="sectionHeader" id="sectionWork">
 		
 	</div>
-
-	<div id="skillGrid">
-		<div class="skillItem">
-			
-		</div>
-		<div class="skillItem">
-			
-		</div>
-		<div class="skillItem">
-			
-		</div>
+	<div class="project" id="identitie">
+		<aside>
+			<ul class="projectNav">
+				<li><a href="#identitieIntro" class="active">Introduction</a></li>
+				<li><a href="#identitieProblem">Problem</a></li>
+				<li><a href="#identitieSolution">Goals</a></li>
+				<li><a href="#identitieFeatures">Features</a></li>
+				<li><a href="#identitieConclusion">Conclusion</a></li>
+			</ul>
+		</aside>
+		<article>
+			<ul class="projectFacets">
+				<li class="projectIntro">
+					<h2>Identitie</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, facilis, voluptates dolor ipsam cumque ullam minima ab dolorem rerum labore iste molestias sint eligendi ducimus ut. Officia aut tempora in.
+					</p>
+					<img src="http://25.media.tumblr.com/d9e791508eb9a532aa7f258fa4e0fedc/tumblr_mtag5zve3g1st5lhmo1_1280.jpg" alt="">
+					<span class="caption">
+						Lorem ipsum dolor sit amet consectetur.
+					</span>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, facilis, voluptates dolor ipsam cumque ullam minima ab dolorem rerum labore iste molestias sint eligendi ducimus ut. Officia aut tempora in.
+					</p>
+				</li>
+				<li>
+					<h2>2-Factor Authentication Is Unusuable</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, delectus, minus ea tempore est molestiae blanditiis possimus esse ipsa aperiam numquam vero aspernatur consectetur laboriosam obcaecati ex laborum tenetur voluptatibus.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, tempore, recusandae, reiciendis doloribus nobis a provident inventore dolorem veritatis debitis odit facere deleniti voluptatibus magni optio quaerat ullam mollitia doloremque.
+					</p>
+				</li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</article>
+		
 	</div>
-
 
 </section>
 
