@@ -1,8 +1,1 @@
-coffeegrounds
-=============
-
-A starting point for node.js web projects. Includes coffeescript, dust.js, SASS, and Zurb Foundation.
-
-```
-npm install
-```
+Personal portfolio website. Developed in Node with Coffeegrounds (github.com/ethanbond/coffeegrounds). Mostly doing it this way to learn about Node and general server stuff!
