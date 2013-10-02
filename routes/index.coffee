@@ -1,3 +1,6 @@
+db = require '../db'
+
+
 module.exports =
 	index: (req, res)->
 		res.render "../views/index",	#views/newproject.dust
@@ -5,6 +8,10 @@ module.exports =
 				title: "Ethan Bond | Product Design & Computer Science"
 				description: "The personal portfolio of designer and software engineer Ethan Bond."
 				author: "Ethan Bond"
+	newPost: (req, res) ->
+		res.render "../views/newpost"
+	submitPost: (req, res) ->
+		console.log req.body.title
 	projects: (req, res) ->
 		res.render "../views/projects",
 			metadata:
@@ -47,7 +54,6 @@ module.exports =
 		resourceID = req.params.resourceID
 		res.render "../views/resources/" + resourceID
 	dbtest: (req, res) ->
-		db = require '../db'
 		db.projects.find().toArray (err, result) ->
 			if err then throw err
 			console.log result
